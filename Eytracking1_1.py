@@ -74,7 +74,7 @@ class CascadeClassifier:
         if glasses:
             self.eye_cascade = cv2.CascadeClassifier('./haarcascade_eye_tree_eyeglasses.xml')
         else:
-            self.eye_cascade = cv2.CascadeClassifier('./lefteye.xml')
+            self.eye_cascade = cv2.CascadeClassifier('./eyes.xml')
 
 
     def get_irises_location(self, frame_gray):
